@@ -51,6 +51,9 @@ header .content {
 
 header .logo {
   flex: 1;
+  color: #4a4a4a;
+  font-size: 1.5rem;
+  font-family: Roboto, monospace, regular;
 }
 
 header nav ul {
@@ -117,6 +120,9 @@ header .mobile {
   justify-content: flex-start;
   align-items: flex-start;
   height: 43.5rem;
+  background-image: url("/resources/images/banner-landingpage.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 
 #sign-up-cta {
