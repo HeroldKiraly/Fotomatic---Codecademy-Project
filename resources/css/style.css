@@ -1,5 +1,8 @@
 /* Universal Styles */
-
+*, *::before, *::after {
+  /* box-sizing: border-box; */
+  outline: 0px solid red;
+}
 html {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
@@ -28,10 +31,15 @@ html {
   display: block;
 }
 
-@media only screen and (max-width: 760px) {
+/* UNIVERSAL STYLES TABLET */
+@media only screen and (max-width: 768px) {
   .main-content {
     top: 2.5625rem;
   }
+}
+/* UNIVERSAL STYLES MOBILE */
+@media only screen and (max-width: 480px) {
+  
 }
 
 /* Header */
@@ -84,7 +92,8 @@ header .mobile {
   display: none;
 }
 
-@media only screen and (max-width: 760px) {
+/* HEADER TABLET */
+@media only screen and (max-width: 768px) {
   header .desktop {
     display: none;
   }
@@ -115,6 +124,11 @@ header .mobile {
     line-height: 1.6;
     color: white;
   }
+}
+
+/* HEADER MOBILE */
+@media only screen and (max-width: 480px) {
+  
 }
 
 /* Sign Up Section */
@@ -177,7 +191,8 @@ header .mobile {
   padding: 1.25rem 7.25rem;
 }
 
-@media only screen and (max-width: 760px) {
+/* SIGN UP TABLET */
+@media only screen and (max-width: 768px) {
   #sign-up-section {
     align-items: center;
     justify-content: center;
@@ -208,8 +223,8 @@ header .mobile {
     font-size: 2.25rem;
   }
 }
-
-@media only screen and (max-width: 450px) {
+/* SIGN UP MOBILE */
+@media only screen and (max-width: 480px) {
   #sign-up-section {
     height: 20rem;
   }
@@ -268,7 +283,8 @@ header .mobile {
   color: #4a4a4a;
 }
 
-@media only screen and (max-width: 890px) {
+/* FEATURES TABLET */
+@media only screen and (max-width: 768px) {
   .feature h2 {
     font-size: 1.125rem;
     line-height: 1.3;
@@ -281,7 +297,8 @@ header .mobile {
   }
 }
 
-@media only screen and (max-width: 760px) {
+/* FEATURES MOBILE */
+@media only screen and (max-width: 480px) {
   #features-section {
     flex-flow: column;
     padding: 0;
@@ -297,6 +314,10 @@ header .mobile {
 
 #filters-section {
   padding: 4rem 0;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
   background-color: #4a4a4a;
 }
 
@@ -312,7 +333,6 @@ header .mobile {
   font-weight: bold;
   color: white;
 }
-
 #filters-section .content h3 {
   padding-top: 0.6rem;
   font-size: 1rem;
@@ -323,27 +343,22 @@ header .mobile {
 }
 
 #filters-section .images-container {
+  display: flex;
   padding: 0 1%;
-  height: 50%;
-  text-align: center;
+  width: 100%;
 }
-#filters-section .image-container {
-  height: 21.875rem;
+#filters-section .image-filter {
+  flex: 1;
+  overflow: hidden;
 }
-#filters-section img {
+.image-filter img {
+  max-width: 100%;
   height: auto;
-  width: 23%;
-}
-#filters-section .image-filter1,
-#filters-section .image-filter2,
-#filters-section .image-filter3,
-#filters-section .image-filter4 {
-  display: inline;
-  padding: 0;
-  margin: 0;
+  display: block;
 }
 
-@media only screen and (max-width: 760px) {
+/* FILTERS TABLET */
+@media only screen and (max-width: 768px) {
   #filters-section {
     padding: 1.5rem 0 0 0;
   }
@@ -372,6 +387,10 @@ header .mobile {
     display: none;
   }
 }
+/* FILTERS MOBILE */
+@media only screen and (max-width: 480px) {
+  
+}
 
 /* Quotes Section */
 
@@ -397,7 +416,8 @@ header .mobile {
   height: 1.875rem;
 }
 
-@media only screen and (max-width: 760px) {
+/* QUOTES TABLET */
+@media only screen and (max-width: 768px) {
   #quotes-section content {
     padding: 1.875rem .625rem;
   }
@@ -412,6 +432,11 @@ header .mobile {
     padding-top: 1rem;
     margin: auto;
   }
+}
+
+/* QUOTES MOBILE */
+@media only screen and (max-width: 480px) {
+
 }
 
 /* Footer */
@@ -434,8 +459,13 @@ footer .copyright {
   font-family: Roboto, regular;
 }
 
-@media only screen and (min-width: 760px) {
+/* FOOTER TABLET */
+@media only screen and (min-width: 768px) {
   footer .content {
     font-size: .625rem;
   }
+}
+/* FOOTER MOBILE */
+@media only screen and (max-width: 480px) {
+  
 }
